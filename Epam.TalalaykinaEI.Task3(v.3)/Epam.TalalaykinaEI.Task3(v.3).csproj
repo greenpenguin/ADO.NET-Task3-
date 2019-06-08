@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8956592-B5A5-4597-B104-17AC420B849B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Epam.TalalaykinaEI.Task3_v._3_</RootNamespace>
+    <AssemblyName>Epam.TalalaykinaEI.Task3%28v.3%29</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account_Forms\AddAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Forms\AddAccountForm.Designer.cs">
+      <DependentUpon>AddAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account_Forms\GetAccountByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Forms\GetAccountByID.Designer.cs">
+      <DependentUpon>GetAccountByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account_Forms\GetAllAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Forms\GetAllAccountsForm.Designer.cs">
+      <DependentUpon>GetAllAccountsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOrUserForm.Designer.cs">
+      <DependentUpon>AdminOrUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apartment_Forms\AddApartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apartment_Forms\AddApartmentForm.Designer.cs">
+      <DependentUpon>AddApartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apartment_Forms\GetAllApartmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apartment_Forms\GetAllApartmentsForm.Designer.cs">
+      <DependentUpon>GetAllApartmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apartment_Forms\GetApartmentByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apartment_Forms\GetApartmentByID.Designer.cs">
+      <DependentUpon>GetApartmentByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Houses_Forms\AddHouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Houses_Forms\AddHouseForm.Designer.cs">
+      <DependentUpon>AddHouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Houses_Forms\GetAllHousesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Houses_Forms\GetAllHousesForm.Designer.cs">
+      <DependentUpon>GetAllHousesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Houses_Forms\GetHouseByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Houses_Forms\GetHouseByID.Designer.cs">
+      <DependentUpon>GetHouseByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Houses_Forms\RemoveHouseByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Houses_Forms\RemoveHouseByID.Designer.cs">
+      <DependentUpon>RemoveHouseByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice_Forms\AddInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice_Forms\AddInvoiceForm.Designer.cs">
+      <DependentUpon>AddInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice_Forms\GetAllInvoicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice_Forms\GetAllInvoicesForm.Designer.cs">
+      <DependentUpon>GetAllInvoicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice_Forms\GetInvoiceByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice_Forms\GetInvoiceByID.Designer.cs">
+      <DependentUpon>GetInvoiceByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\AddDebtorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\AddDebtorForm.Designer.cs">
+      <DependentUpon>AddDebtorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\GetAllDebtorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\GetAllDebtorsForm.Designer.cs">
+      <DependentUpon>GetAllDebtorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\GetDebtorByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\GetDebtorByID.Designer.cs">
+      <DependentUpon>GetDebtorByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\RemoveDebtorByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Debtor_Forms\RemoveDebtorByID.Designer.cs">
+      <DependentUpon>RemoveDebtorByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Installed_Meters_Forms\AddInstalledMeterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Installed_Meters_Forms\AddInstalledMeterForm.Designer.cs">
+      <DependentUpon>AddInstalledMeterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Installed_Meters_Forms\GetAllInstalledMetersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Installed_Meters_Forms\GetAllInstalledMetersForm.Designer.cs">
+      <DependentUpon>GetAllInstalledMetersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Installed_Meters_Forms\GetInstMetrByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Installed_Meters_Forms\GetInstMetrByID.Designer.cs">
+      <DependentUpon>GetInstMetrByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meter_Forms\AddMeterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meter_Forms\AddMeterForm.Designer.cs">
+      <DependentUpon>AddMeterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meter_Forms\GetAllMetersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meter_Forms\GetAllMetersForm.Designer.cs">
+      <DependentUpon>GetAllMetersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meter_Forms\GetMetrByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meter_Forms\GetMetrByID.Designer.cs">
+      <DependentUpon>GetMetrByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meter_Forms\RemoveMeterByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meter_Forms\RemoveMeterByID.Designer.cs">
+      <DependentUpon>RemoveMeterByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_List_Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_List_Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_List_Forms\GetAllOwners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_List_Forms\GetAllOwners.Designer.cs">
+      <DependentUpon>GetAllOwners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_List_Forms\GetOwnerByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_List_Forms\GetOwnerByID.Designer.cs">
+      <DependentUpon>GetOwnerByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rate_Archive_Forms\AddRateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rate_Archive_Forms\AddRateForm.Designer.cs">
+      <DependentUpon>AddRateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rate_Archive_Forms\GetAllRatesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rate_Archive_Forms\GetAllRatesForm.Designer.cs">
+      <DependentUpon>GetAllRatesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rate_Archive_Forms\GetRateByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rate_Archive_Forms\GetRateByID.Designer.cs">
+      <DependentUpon>GetRateByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\AccountInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\AccountInfoForm.Designer.cs">
+      <DependentUpon>AccountInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ApartmentInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\ApartmentInformationForm.Designer.cs">
+      <DependentUpon>ApartmentInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\DebtInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\DebtInfoForm.Designer.cs">
+      <DependentUpon>DebtInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\InvoiceInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\InvoiceInformationForm.Designer.cs">
+      <DependentUpon>InvoiceInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTILITIES3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UTILITIES3DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitie_Forms\AddUtilitieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitie_Forms\AddUtilitieForm.Designer.cs">
+      <DependentUpon>AddUtilitieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitie_Forms\GetAllUtilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitie_Forms\GetAllUtilitiesForm.Designer.cs">
+      <DependentUpon>GetAllUtilitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitie_Forms\GetUtilitieByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitie_Forms\GetUtilitieByID.Designer.cs">
+      <DependentUpon>GetUtilitieByID.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account_Forms\AddAccountForm.resx">
+      <DependentUpon>AddAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account_Forms\GetAccountByID.resx">
+      <DependentUpon>GetAccountByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account_Forms\GetAllAccountsForm.resx">
+      <DependentUpon>GetAllAccountsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrUserForm.resx">
+      <DependentUpon>AdminOrUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apartment_Forms\AddApartmentForm.resx">
+      <DependentUpon>AddApartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apartment_Forms\GetAllApartmentsForm.resx">
+      <DependentUpon>GetAllApartmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apartment_Forms\GetApartmentByID.resx">
+      <DependentUpon>GetApartmentByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Houses_Forms\AddHouseForm.resx">
+      <DependentUpon>AddHouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Houses_Forms\GetAllHousesForm.resx">
+      <DependentUpon>GetAllHousesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Houses_Forms\GetHouseByID.resx">
+      <DependentUpon>GetHouseByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Houses_Forms\RemoveHouseByID.resx">
+      <DependentUpon>RemoveHouseByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice_Forms\AddInvoiceForm.resx">
+      <DependentUpon>AddInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice_Forms\GetAllInvoicesForm.resx">
+      <DependentUpon>GetAllInvoicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice_Forms\GetInvoiceByID.resx">
+      <DependentUpon>GetInvoiceByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Debtor_Forms\AddDebtorForm.resx">
+      <DependentUpon>AddDebtorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Debtor_Forms\GetAllDebtorsForm.resx">
+      <DependentUpon>GetAllDebtorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Debtor_Forms\GetDebtorByID.resx">
+      <DependentUpon>GetDebtorByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Debtor_Forms\RemoveDebtorByID.resx">
+      <DependentUpon>RemoveDebtorByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Installed_Meters_Forms\AddInstalledMeterForm.resx">
+      <DependentUpon>AddInstalledMeterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Installed_Meters_Forms\GetAllInstalledMetersForm.resx">
+      <DependentUpon>GetAllInstalledMetersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Installed_Meters_Forms\GetInstMetrByID.resx">
+      <DependentUpon>GetInstMetrByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter_Forms\AddMeterForm.resx">
+      <DependentUpon>AddMeterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter_Forms\GetAllMetersForm.resx">
+      <DependentUpon>GetAllMetersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter_Forms\GetMetrByID.resx">
+      <DependentUpon>GetMetrByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter_Forms\RemoveMeterByID.resx">
+      <DependentUpon>RemoveMeterByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_List_Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_List_Forms\GetAllOwners.resx">
+      <DependentUpon>GetAllOwners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_List_Forms\GetOwnerByID.resx">
+      <DependentUpon>GetOwnerByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rate_Archive_Forms\AddRateForm.resx">
+      <DependentUpon>AddRateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rate_Archive_Forms\GetAllRatesForm.resx">
+      <DependentUpon>GetAllRatesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rate_Archive_Forms\GetRateByID.resx">
+      <DependentUpon>GetRateByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\AccountInfoForm.resx">
+      <DependentUpon>AccountInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ApartmentInformationForm.resx">
+      <DependentUpon>ApartmentInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\DebtInfoForm.resx">
+      <DependentUpon>DebtInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\InvoiceInformationForm.resx">
+      <DependentUpon>InvoiceInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitie_Forms\AddUtilitieForm.resx">
+      <DependentUpon>AddUtilitieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitie_Forms\GetAllUtilitiesForm.resx">
+      <DependentUpon>GetAllUtilitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitie_Forms\GetUtilitieByID.resx">
+      <DependentUpon>GetUtilitieByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UTILITIES3DataSet.xsc">
+      <DependentUpon>UTILITIES3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UTILITIES3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UTILITIES3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UTILITIES3DataSet.xss">
+      <DependentUpon>UTILITIES3DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{e32c42f2-de0a-4680-9440-3d39352df7e9}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{39f48921-2da8-4a3c-b3bf-0fcc5be69aa0}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
